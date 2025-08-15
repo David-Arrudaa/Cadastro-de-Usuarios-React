@@ -13,18 +13,18 @@ function Home() {
         <ContainerInputs>
           <div>
             <div>
-              <InputLabel>Nome<span>*</span></InputLabel>
+              <InputLabel>Nome<span>* </span></InputLabel>
               <Input type='text' placeholder='Nome do usuário'></Input>
             </div>
 
             <div>
-              <InputLabel>Idade<span>*</span></InputLabel>
+              <InputLabel>Idade<span>* </span></InputLabel>
               <Input type='number' placeholder='Idade do usuário'></Input>
             </div>
           </div>
 
           <div>
-            <InputLabel>Nome<span>*</span></InputLabel>
+            <InputLabel>E-mail<span>* </span></InputLabel>
             <Input type='email' placeholder='E-mail do usuário'></Input>
           </div>
         </ContainerInputs>
