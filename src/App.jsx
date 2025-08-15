@@ -10,25 +10,22 @@ function Home() {
 
       <Form>
         <Title>Cadastrar Usuários</Title>
-
         <ContainerInputs>
           <div>
-            <div>
-              <InputLabel>Nome<span>* </span></InputLabel>
-              <Input type='text' placeholder='Nome do usuário'></Input>
-            </div>
-
-            <div>
-              <InputLabel>Idade<span>* </span></InputLabel>
-              <Input type='number' placeholder='Idade do usuário'></Input>
-            </div>
+            <InputLabel htmlFor="name">Nome <span>*</span></InputLabel>
+            <Input id="name" type='text' placeholder='Nome do usuário'></Input>
           </div>
 
           <div>
-            <InputLabel>E-mail<span>* </span></InputLabel>
-            <Input type='email' placeholder='E-mail do usuário'></Input>
+            <InputLabel htmlFor="age">Idade <span>*</span></InputLabel>
+            <Input id="age" type='number' placeholder='Idade do usuário'></Input>
           </div>
         </ContainerInputs>
+
+        <div style={{ width: '100%' }}>
+          <InputLabel htmlFor="email">E-mail <span>*</span></InputLabel>
+          <Input id="email" type='email' placeholder='E-mail do usuário'></Input>
+        </div>
 
         <Button>Cadastrar Usuário</Button>
       </Form>
