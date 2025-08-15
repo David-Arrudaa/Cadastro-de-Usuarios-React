@@ -1,10 +1,11 @@
 import { Container, TopBackground, ContainerInputs, InputLabel, Form, Title, Input, Button } from './styles.js'
+import UsersImage from './assets/users.png'
 
 function Home() {
   return (
     <Container>
       <TopBackground>
-        <img />
+        <img src={UsersImage} alt="imagem-usuarios" />
       </TopBackground>
 
       <Form>
