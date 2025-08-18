@@ -1,7 +1,9 @@
 import { useRef } from 'react'
 import api from '../../services/api.js'
-import { Container, TopBackground, ContainerInputs, InputLabel, Form, Title, Input, Button } from './styles.js'
+import { Container, ContainerInputs, InputLabel, Form, Title, Input } from './styles.js'
 import UsersImage from '../../assets/users.png'
+import Button from '../../components/Button'
+import TopBackground from '../../components/TopBackground'
 
 function Home() {
 
@@ -20,9 +22,7 @@ function Home() {
 
   return (
     <Container>
-      <TopBackground>
-        <img src={UsersImage} alt="imagem-usuarios" />
-      </TopBackground>
+      <TopBackground />
 
       <Form>
         <Title>Cadastrar Usuários</Title>
