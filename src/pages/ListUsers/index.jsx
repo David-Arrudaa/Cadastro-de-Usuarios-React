@@ -22,7 +22,7 @@ function ListUsers() {
             <TopBackground />
             <Title>Listagem de Usuários</Title>
             {users.map( user =>(
-                <div>
+                <div key={user.id}>
                     <p>{user.name}</p>
                     <p>{user.age}</p>
                     <p>{user.email}</p>
