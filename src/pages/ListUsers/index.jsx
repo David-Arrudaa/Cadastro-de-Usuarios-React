@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react'
 import Button from '../../components/Button'
 import TopBackground from '../../components/TopBackground'
 import { useNavigate } from 'react-router-dom'
-import { Container, Title } from '../Home/styles'
+import { CardUsers, Container, ContainerUsers, Title, TrashIcon, AvatarUser } from './styles'
+import Trash from '../../assets/trash.svg';
 
 function ListUsers() {
     const navigate = useNavigate()
@@ -17,23 +18,29 @@ function ListUsers() {
         getUsers()
     }, []);
 
+
+
     return (
         <Container>
             <TopBackground />
-            <Title>Listagem de Usuários</Title>
-            {users.map( user =>(
-                <div key={user.id}>
-                    <p>{user.name}</p>
-                    <p>{user.age}</p>
-                    <p>{user.email}</p>
-                </div>
+            <Title>Lista de Usuários</Title>
 
-            ))}
-            <Button theme='primary' onClick={() => navigate('/')}>Voltar</Button>
+            <ContainerUsers>
+                {users.map(user => (
+                    <CardUsers key={user.id}>
+                        <AvatarUser src={`https://avatar.iran.liara.run/public?username=${users.id}`} />
+                        <div>
+                            <h3>{user.name}</h3>
+                            <p>{user.age}</p>
+                            <p>{user.email}</p>
+                        </div>
+                        <TrashIcon src={Trash} alt='icone-lixo' />
+                    </CardUsers>
+                ))}
+            </ContainerUsers>
+            <Button type="button" onClick={() => navigate('/')}>Voltar</Button>
         </Container>
     )
 }
-
-
 
 export default ListUsers
