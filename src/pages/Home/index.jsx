@@ -20,6 +20,10 @@ function Home() {
       name: inputName.current.value
     })
 
+    inputName.current.value = ""
+    inputAge.current.value = ""
+    inputEmail.current.value = ""
+
   }
 
   return (
