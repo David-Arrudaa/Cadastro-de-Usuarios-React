@@ -32,7 +32,7 @@ export const ContainerUsers = styled.div`
 
 export const CardUsers = styled.div`
   background: #252d48;
-  padding: 16px;
+  padding: 14px;
   border-radius: 32px;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ export const CardUsers = styled.div`
 
   p {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 200;
   }
 `;

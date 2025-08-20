@@ -34,7 +34,7 @@ function ListUsers() {
             <ContainerUsers>
                 {users.map(user => (
                     <CardUsers key={user.id}>
-                        <AvatarUser src={`https://avatar.iran.liara.run/public?username=${users.id}`} />
+                        <AvatarUser src={`https://avatar.iran.liara.run/public/?username=${user.id}`} />
                         <div>
                             <h3>{user.name}</h3>
                             <p>{user.age}</p>
