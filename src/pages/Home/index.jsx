@@ -6,7 +6,6 @@ import TopBackground from '../../components/TopBackground'
 import { useNavigate } from 'react-router-dom'
 
 function Home() {
-
   const inputName = useRef()
   const inputAge = useRef()
   const inputEmail = useRef()
